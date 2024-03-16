@@ -1,0 +1,48 @@
+A RAM é uma forma volátil de armazenamento e perde seu conteúdo quando o computador é desligado; V
+O disco rígido é uma forma de armazenamento não volátil e mantém seus dados mesmo quando o computador é desligado; V
+A CPU é responsável por processar os dados e executar instruções no computador; V
+O BIOS (Basic Input/Output System) é um software armazenado em um chip na placa-mãe e é responsável por inicializar o computador; V
+O USB (Universal Serial Bus) é um padrão de conexão utilizado para conectar dispositivos externos ao computador; V
+O HDMI (High-Definition Multimedia Interface) é um tipo de conector utilizado para transmitir áudio e vídeo de alta definição entre dispositivos; V
+A placa de vídeo é responsável pelo processamento de gráficos e imagens em um computador; V
+O SSD (Solid State Drive) é um tipo de armazenamento mais rápido e confiável em comparação com os discos rígidos tradicionais; V
+O processador Intel Core i9 é projetado para oferecer alto desempenho em computadores de uso intensivo, como edição de vídeo e jogos; V
+O overclock é uma prática que aumenta a velocidade de operação do processador além das especificações do fabricante, resultando em melhor desempenho; V
+O barramento PCI Express (PCIe) é um padrão de interface de computador que é usado principalmente para conectar placas de expansão, como placas gráficas e placas de som; V
+O chipset de uma placa-mãe é responsável por controlar a comunicação entre o processador, a memória, os dispositivos de armazenamento e outros periféricos; V
+O protocolo SATA (Serial ATA) é comumente usado para conectar dispositivos de armazenamento, como discos rígidos e SSDs, a uma placa-mãe; V
+A memória cache é uma forma de armazenamento temporário usado pela CPU para armazenar dados frequentemente acessados, reduzindo o tempo de acesso à memória principal; V
+O BIOS e o UEFI (Unified Extensible Firmware Interface) são ambos responsáveis pela inicialização do computador, mas o UEFI oferece recursos adicionais, como suporte a discos rígidos maiores que 2 TB e inicialização mais rápida; V
+O termo "bit" é a unidade básica de informação em sistemas de computador e pode ter um valor de 0 ou 1; V
+A memória ROM (Read-Only Memory) é uma forma de armazenamento permanente que contém instruções essenciais para a inicialização do computador e não pode ser alterada; V
+O protocolo USB 3.0 oferece velocidades de transferência de dados mais rápidas em comparação com o USB 2.0; V
+A arquitetura de 64 bits permite que um processador acesse mais memória e execute instruções mais complexas em comparação com a arquitetura de 32 bits; V
+O CMOS (Complementary Metal-Oxide-Semiconductor) é um tipo de memória de armazenamento de configuração que mantém as configurações do BIOS, como data e hora, mesmo quando o computador está desligado; V
+A Álgebra de Boole fornece a base teórica para o funcionamento do computador binário; V
+Von Neumann, matemático britânico, é considerado o pai da computação; F
+Duas portas lógicas inversoras ligadas em série, uma após a outra, se anulariam; V
+Um barramento de endereço com 3 bits pode acessar até 16 posições de memória diferentes; F 
+A Arquitetura de Von Neumann propõe um modelo conceitual de computador dividido em 4 componentes principais: CPU, memória, registradores e barramento; V 
+Conceitualmente falando, um computador pode ser dividido em 3 tipos de barramentos: barramento local, barramento interno e barramento de expansão; V 
+Latência de um pente de RAM é o tempo gasto para que os dados nela contidos sejam encaminhados à CPU, e são descritos em ciclos. Quanto maior a latência, melhor; F 
+Uma das formas de diagnóstico de problemas de hardware é o POST (Power On Self Test). Com ele é possível identificar alguns defeitos de hardware na inicialização do PC por meio de beeps emitidos; V 
+Uma CPU que possui um barramento de instrução com 2 bits pode interpretar até 4 instruções diferentes (set code); V 
+O SLA deve possuir os critérios de avaliação da qualidade do serviço de TI executado; V 
+Quando uma mother-board não dá sinal (não liga), uma boa dica é medir a tensão de saída da fonte de alimentação; V
+Dois pentes de memória RAM com clock diferentes podem trabalhar juntas numa mesma mother-board; V 
+No linux o comando sudo apt upgrade atualiza a lista de programas; F 
+É comum que servidores linux não tenham teclado, mouse nem monitor instalados. Neste caso, são acessados remotamente via ssh; V 
+Uma máquina Windows não pode ser acessada via uma máquina linux usando a porta 22; F
+Uma mother-board projetada para receber um soquete de um processador da AMD pode facilmente receber um processador da INTEL, bastando para isso, fazer sua configuração de setup na BIOS do computador; F 
+O programa CPU-Z faz análise de defeitos de hardware no Windows; F 
+O linux foi desenvolvido com o objetivo de permitir que um computador padrão IBM/PC pudesse ser operado de forma similar ao antigo sistema operacional Unix. Por isso o uso de terminais é tão forte; V 
+Conceitualmente, uma placa-mãe possui os chamados chipsets ponte-norte e ponte sul. A ponte sul é responsável pela comunicação de dispositivos de baixa velocidade enquanto a ponte norte os dispositivos de alta velocidade; V 
+O protocolo SSH permite uma conexão criptografada entre 2 computadores interligados em rede. Dentre outras coisas é muito utilizado para serviços de manutenção tipo help-desk; V 
+O comando ping ip_destino testa a comunicação via rede entre dois computadores; V 
+A redundância de hardware é uma estratégia de configuração de sistemas de computação e equipamentos que envolve a duplicação de componentes críticos. Caso um queime o outro assume; V 
+A elaboação de scripts linux pode ser um grande aliado na automação de tarefas administrativas e técnicas para identificação de defeitos de hardware de pc e equipamentos de rede; V 
+Dual-channel é uma técnica de otimização de acesso à RAM feita pela CPU muito comum em mother-boards modernas; V 
+Uma fonte de alimentação de um computador desktop recebe tensão AC e fornece DC; V
+Uma fonte de alimentação de um computador recebe tensão DC e transforma em AC; F 
+A sigla USB significa Unit Serial Bus e trata-se um padrão fechado proprietário; F 
+Uma porta USB pode não ter a alimentação necessária para suportar um dado periférico, e isso pode acarretar seu mal funcionamento; V 
