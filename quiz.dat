@@ -46,3 +46,28 @@ Uma fonte de alimentação de um computador desktop recebe tensão AC e fornece 
 Uma fonte de alimentação de um computador recebe tensão DC e transforma em AC; F 
 A sigla USB significa Unit Serial Bus e trata-se um padrão fechado proprietário; F 
 Uma porta USB pode não ter a alimentação necessária para suportar um dado periférico, e isso pode acarretar seu mal funcionamento; V 
+Os semicondutores são essenciais para o funcionamento de computadores pois por meio deles é possível criar circuitos eletrônicos baseados na lógica digital ou binária; V 
+Na computação, em relação ao hardware, a álgebra de Boole é manifestada nos circuitos lógicos baseados em portas lógicas; V 
+Na computação, em relação ao software, a álgebra de Boole é manifestada na lógica de programação; V
+Na computação, em relação ao software, a álgebra de Von Neumann é manifestada na lógica de programação; F 
+Allan Turing, matemático britânico, é considerado o pai da computação; V
+A porta lógica AND tem saída igual a 1 quando pelo menos uma de suas entradas for igual a 1; F 
+Os transistores são condutores elétricos que não devem mais ser utilizados em computadores; F 
+Uma porta lógica OR tem sua saída igual a 1 somente se todas as suas entradas foram iguais a 1; F 
+No linux o comando sudo apt upgrade atualiza a lista de pacotes no computador local; F 
+No linux o comando "sudo" significa "faça como um super usuário"; V
+No linux o comando tree mostra a árvore de diretórios a partir de onde você está; V 
+No linux o comando addicuser adiciona uma novo usuário; F 
+O principal sistema de arquivos usados pelo linux atualmente é o NTFS; F 
+O sistema operacional Windows não reconhece nativamente o sistema de arquivos EXT4; V 
+No Windows é possível utilizar o comando winget no terminal para instalar programas; V 
+O Windows 11 Home não oferece suporte ao acesso remoto nativo, somente a versão pro; V 
+No Windows 11 não é possível instalar o openssh server, como no linux; F 
+O Windows 10 foi lança em 2015; V 
+O Windows 7 era um sistema operacional de código aberto desenvolvido pela Microsoft; F
+O Windows Defender é um software antivírus integrado ao Windows; V 
+O Windows 11 é a versão mais recente do sistema operacional Windows; V 
+O Windows 7 foi lançado antes do Windows XP; F 
+O Windows XServer é uma versão do Windows projetada para servidores; F 
+O Windows 11 introduziu o recurso "Cortana", uma assistente virtual integrada; F 
+O Windows PowerShell é uma interface de linha de comando e uma linguagem de script desenvolvida pela Microsoft para a automação de tarefas administrativas; V 

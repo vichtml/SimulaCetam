@@ -38,11 +38,12 @@ def aguarde():
 def hello():
     print('')
     os.system('figlet ....SIMULA CETAM')   
-    print('              😊' + ' ALEGRIA 1.0 - SIMULADOR DE QUESTÕES DE TECNOLOGIA')  
-    print('')
-    print('')
+    #print('')
     print('                    CENTRO DE EDUCAÇÃO TECNOLÓGICA DO AMAZONAS')
-    print('                               by: professor.bugador@gmail.com')
+    print('')
+    print('             😊' + ' ALEGRIA 1.0 - SIMULADOR DE QUESTÕES SOBRE TECNOLOGIA')  
+    print('                               by: prof. Marcelo Fournier')
+    print("")
     linha()
     data_hora()
     mostra_host_ip()
@@ -92,6 +93,33 @@ def selecionar_questoes(arquivo, quantidade):
 #for i, (pergunta, resposta) in enumerate(questoes, start=1):
 #    print(f"{i}. {pergunta} (Resposta: {'Verdadeira' if resposta else 'Falsa'})")
 
+
+def abrir_arquivo(nome_arquivo):
+    try:
+        with open(nome_arquivo, 'r') as arquivo:
+            conteudo = arquivo.read()
+            print(conteudo)
+        return conteudo
+    except FileNotFoundError:
+        print(f"O arquivo '{nome_arquivo}' não foi encontrado.")
+        return None
+    except IOError as e:
+        print(f"Ocorreu um erro de entrada/saída ao abrir o arquivo '{nome_arquivo}':", e)
+        return None
+    except Exception as e:
+        print(f"Ocorreu um erro ao abrir o arquivo '{nome_arquivo}':", e)
+        return None
+
+# Exemplo de uso da função
+#nome_arquivo = input("Digite o nome do arquivo a ser aberto: ")
+#conteudo_arquivo = abrir_arquivo(nome_arquivo)
+#if conteudo_arquivo is not None:
+ #   print("Conteúdo do arquivo:")
+ #   print(conteudo_arquivo)
+
+
+def mostrar_time():
+    abrir_arquivo("time.txt")
 
 # Função para iniciar o quiz
 def iniciar_quiz(questoes):
@@ -147,6 +175,7 @@ def main():
         print("  2. REGISTRAR NICKNAME")
         print("  3. MOSTRAR OS TOP20")
         print("  4. SELECIONAR QUESTÕES")
+        print("  9. TIME DO PROJETO")
         print("  0. SAIR")
         linha();       
         opcao = input("  SELECIONE A OPÇÃO DESEJADA ==> : ")
@@ -167,6 +196,10 @@ def main():
         elif opcao == "4":
             limpar_tela()
             questoes = selecionar_questoes("quiz.dat", 2)
+            input("Pressione Enter para continuar...")
+        elif opcao == "9":
+            limpar_tela()
+            mostrar_time()
             input("Pressione Enter para continuar...")
 
         elif opcao == "0":
