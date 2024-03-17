@@ -71,3 +71,60 @@ O Windows 7 foi lançado antes do Windows XP; F
 O Windows XServer é uma versão do Windows projetada para servidores; F 
 O Windows 11 introduziu o recurso "Cortana", uma assistente virtual integrada; F 
 O Windows PowerShell é uma interface de linha de comando e uma linguagem de script desenvolvida pela Microsoft para a automação de tarefas administrativas; V 
+O IP 196.13.15.12 pertence a classe A de IPV4; F 
+O IP 10.10.11.120 pertence a classe C de IPV4; F 
+O IP 11.11.11.192 pertence a classe A de IPV4; V 
+O IP 132.15.12.110 pertecen classe B de IPV4; V 
+O comando sudo systemctl init [service_name] no linux inicia um serviço; F 
+No linux o comando pwd mostra o diretório atual; V 
+No linux o comando pwf mostra o diretório atual; F 
+No linux o comando makendir cria um novo diretório; F 
+No linux o comando htop mostra um gerenciador de processos/tarefas; V
+No linux o comando clear limpa a tela do terminal; V 
+NO linux o comando cleax limpa a tela do terminal; F 
+No linux o comando sudo shutdown now reinicia o computador agora; F 
+No linux o comando sudo shutdown -r now reinicia o computador agora; V 
+No linux o comando sudo shutdown now desliga o computador agora; V
+No linux o comando sudo shutdown 11:15 desliga o computador as 11:15; V 
+No linux o comando man exibe uma página de manual de algum comando; V 
+No linux o comando chmod altera as permissões de um arquivo ou diretório; V 
+No linux o comando chmof altera as permissões de um arquivo; F 
+No linux o comando free exibe as informações de memória RAM total e usada; V 
+No linux o comando free exibe as informações de espaço em disco; F 
+No linux o comando top exibe informações de processos rodando na máquina; V 
+No linux o comando uname -a exibe diversas informações sobre o sistema, kernel, etc; V 
+No linux o comando tac exibe um arquivo texto ao contrário no terminal; V 
+No linux o comando cat exibe o conteúdeo de um arquivo texto; V 
+No linux o comando cat exibe o conteúdo de um arquivo texto ao contrário; F 
+No linux é possível executar um programa escrito em python com o comando python3 programa.py; V 
+No linux o comando mkdir cria um diretório; V 
+No linux o comando mkdir remove um diretório; F 
+No linux o comando echo mostra uma mensagem de texto na tela; V 
+No linux o comando echo emite um beep; F 
+No linux o comando su permite fazer login com um outro nome de usuário, como o root; V 
+O linux é um sistema multitarefa real e multiusuário; V 
+O linux não é um sistema multitarefa real e multiusuário; F 
+O linux suporte nomes de arquivos e diretórios de até 255 caracteres; V 
+O linux suporte nomes de arquivos e diretórios de até 255 caracteres; F 
+O linux suporta a mais de 256 terminais virtuais (consoles); V 
+O Linux somente carrega para a memória o que é usado durante o processamento,
+liberando totalmente a memória assim que o programa/dispositivo é finalizado; v 
+O linux tem suporte nativo a múltiplas CPUs e multi threads; V 
+O linux não possui suporte nativo a dispositivos SSD, SATA, PATA, Fiber Channel; F 
+O linux possui suporte nativo a dispositivos SSD, SATA, PATA, Fiber Channel; V 
+O projeto GNU começou em 1983 com o objetivo de desenvolver um sistema operacional Unix-like totalmente livre. Livre se refere à liberdade, e não ao preço; significa que você
+está livre para executar, distribuir, estudar, mudar e melhorar o software; v 
+O computador não é uma máquina inteligente, ele apenas executa as instruções dos programas que foram escritos pelo programador; V 
+O computador é uma máquina inteligente; F 
+Desktop, mini-torre e torre, são alguns tipos de gabinetes de computadores; V 
+No linux o diretório /etc contém informações de configurações do sistema e de programas instalados; V 
+No linux o diretório /etc contém curiosidades sobre os usuários do sistema; F 
+No linux o diretório /bin possui arquivos binários para execução de programas instalados; V 
+No linux o diretório /bootin contém arquivos necessários para a inicialização do sistema; F  
+No linux o diretório /boot contém arquivos necessários para a inicialização do sistema; V 
+No linux o diretório /media é usado para ouvir música; F 
+No linux o diretório /media é usado para montar dispositivos diversos do sistema como rede, pendrives, etc; V 
+No linux o diretório /sbin possui programas usados pelo superusuário (root) para a administração do sistema; V 
+No linux o diretório /sbin possui programas usados pelo usuario comum para a administração do sistema; F  
+No linux o diretório /var contém maior parte dos arquivos gravados com frequência pelos programas do sistema, e-mails, spool de impressão, etc; V 
+No linux o comando lx lista os arquivos de um diretório x; F 

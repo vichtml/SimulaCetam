@@ -65,9 +65,11 @@ def selecionar_questoes(arquivo, quantidade):
     questoes_selecionadas = []
 
     # Abre o arquivo e lê todas as linhas
+    contador = 0
     with open(arquivo, 'r') as f:
+        contador = contador +1
         linhas = f.readlines()
-
+        
     # Embaralha as linhas para seleção aleatória
     random.shuffle(linhas)
 
@@ -88,11 +90,6 @@ def selecionar_questoes(arquivo, quantidade):
 
     return questoes_selecionadas
 
-# Exemplo de uso da função
-#questoes = selecionar_questoes('quiz.dat', 30)
-#for i, (pergunta, resposta) in enumerate(questoes, start=1):
-#    print(f"{i}. {pergunta} (Resposta: {'Verdadeira' if resposta else 'Falsa'})")
-
 
 def abrir_arquivo(nome_arquivo):
     try:
@@ -109,14 +106,6 @@ def abrir_arquivo(nome_arquivo):
     except Exception as e:
         print(f"Ocorreu um erro ao abrir o arquivo '{nome_arquivo}':", e)
         return None
-
-# Exemplo de uso da função
-#nome_arquivo = input("Digite o nome do arquivo a ser aberto: ")
-#conteudo_arquivo = abrir_arquivo(nome_arquivo)
-#if conteudo_arquivo is not None:
- #   print("Conteúdo do arquivo:")
- #   print(conteudo_arquivo)
-
 
 def mostrar_time():
     abrir_arquivo("time.txt")
@@ -143,8 +132,8 @@ def iniciar_quiz(questoes):
                 print("  Resposta incorreta.")
 
         print('  RESUMO: ')
-        print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
         linha()
+        print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
         aguarde()
         limpar_tela()
 
@@ -173,7 +162,7 @@ def main():
         linha()
         print("  1. INICIAR QUIZ")
         print("  2. REGISTRAR NICKNAME")
-        print("  3. MOSTRAR OS TOP20")
+        print("  3. MOSTRAR TOTAL DE QUESTÕES")
         print("  4. SELECIONAR QUESTÕES")
         print("  9. TIME DO PROJETO")
         print("  0. SAIR")
