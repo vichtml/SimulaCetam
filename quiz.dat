@@ -128,3 +128,33 @@ No linux o diretório /sbin possui programas usados pelo superusuário (root) pa
 No linux o diretório /sbin possui programas usados pelo usuario comum para a administração do sistema; F  
 No linux o diretório /var contém maior parte dos arquivos gravados com frequência pelos programas do sistema, e-mails, spool de impressão, etc; V 
 No linux o comando lx lista os arquivos de um diretório x; F 
+A sigla BIOS significa BASIC INPUT/OUTPUT SYSTEM, ou seja, sistema básico de entrada e saída; V 
+A sigla BIOS significa BASIC INPUT/OUTPUT SERVICE, ou seja, sistema básico de entrada e serviço; V 
+EEPROM significa Electrically Erasable Programmable Read-Only Memory – Memória de Apenas Leitura Apagável Eletricamente e Programável. Chip que pode ser reprogramado após ter seu conteúdo apagado eletricamente; v 
+EPROM significa Erasable Programmable Read-Only Memory – Memória de Apenas Leitura Apagável e Programável. Chip que pode ser reprogramado após ter seu conteúdo apagado por luz ultravioleta; v  
+FLASH é um tipo de memória que mantém suas informações mesmo após desligado o microcomputador. Exemplos: BIOS em FLASH EEPROM que possibilita a atualização do BIOS via software, cartões PMCIA utilizados como expansão de discos nos notebooks, cartões de memória e/ou pendrives; V 
+FLASH é um tipo de memória que perde suas informações após o computador ser desligado; F 
+ROM é a sigla para Read-Only Memory – Memória de Apenas Leitura. Memória que não perde seu conteúdo quando o microcomputador é desligado. Utilizada para armazenar funções e rotinas necessárias para controles de funcionamento básico; V 
+ROM é a sigla para Ready Only Memory, memória pronta para acesso; F 
+SRAM significa Static Random Acess Memory – Memória Estática de Acesso Randômico. Tem as características da memória RAM, acrescidas do avanço tecnológico de não necessitar da renovação constante pelo processador o que faz dela uma memória mais rápida que as RAM; V 
+O hardware, circuitaria, material ou ferramental é a parte física do computador, ou seja, é o conjunto de componentes eletrônicos, circuitos integrados e placas, que se comunicam através de barramentos; v 
+O hardware corresponde ao sistema operacional de um computador, como o Windows 11; F 
+No Windows o comando dir lista o conteúdo de um diretório; V 
+No Windows o comando dir abre um novo terminal; F 
+No Windows o comando cmd abre um novo prompt de comandos; V 
+No Windows o comando cls limpa a tela do terminal; V 
+No Windows o comando cls sai do terminal do prompt de comandos; F 
+No Windows o comando cd muda de diretório ou pasta; V 
+No Windows o comando cd .. volta a um nível de diretório; V 
+No Windows para entrar numa pasta se usa o comando cd nome_da_pasta; V 
+No Windows o comando time mostra a data atual; F 
+No Windows o comando time mostra a hora atual; v 
+No Windows o comando date mostra a data atual; V 
+No Windows 11 o comando date não serve para mostrar a data atual; F 
+No Windows o comando hostname mostra o nome do computador; V
+No Windows o comando hostname mostra a versão do Windows em uso; F 
+No Windows o comando "ver" mostra a versão do sistema operacional em uso; V 
+No Windows o comando "ver" faz uma verificação de segurança no sistema; F 
+No Windows o comando color permite alterar as cores do texto e da tela de fundo do terminal; V 
+No Windows o comando shutdown permite fazer o desligamento do computador; v 
+No Windows o comando mkdir cria um diretório ou pasta; V  

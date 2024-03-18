@@ -1,5 +1,4 @@
 -------------------------------------------------------------------
-
   ____ _____ _____  _    __  __       _        _    ____    _ _ 
  / ___| ____|_   _|/ \  |  \/  |     | |      / \  | __ )  / / |
 | |   |  _|   | | / _ \ | |\/| |     | |     / _ \ |  _ \  | | |
@@ -9,25 +8,21 @@
           CENTRO DE EDUCAÇÃO TECNOLÓGICA DO AMAZONAS
               IBC - INSTITUTO BENJAMIN CONSTANT
                 LABORATÓRIO DE INFORMÁTICA 11
-
+                
 -------------------------------------------------------------------
-Projeto: Simulador de questões (quiz) sobre tecnologia
+Projeto: Gerador de simulados de questões sobre tecnologia
 Marcelo Fournier - prof. Orientador
 
 Time do projeto (pré-seleção de alunos)
-
 Moderadores:
-============
-Antonio Gelcivan Carvalho Feitosa		
+===================================
 Vitor Hugo Dionizio Pinheiro
-Monic da Silva Rabelo
-Shaila de Almeida David
+Efraim de Oliveira Barrosos
 
 Desenvolvimento python:
-=======================
+====================================
 Alexsander Victor Silva Ferreira
 Eder Haniel Oliveira Soares
-Efraim de Oliveira Barrosos
 Joao Victor Queiroz Barauna da Costa
 Luiz Miguel de Jesus DÁvilla
 Thayller de Vasconcelos Picanco

@@ -35,6 +35,10 @@ def aguarde():
     print('  Pressione qualquer tecla para prosseguir...')
     getch.getch()
 
+def contato():
+    limpar_tela()
+    mostrar_time()
+
 def hello():
     print('')
     os.system('figlet ....SIMULA CETAM')   
@@ -114,22 +118,36 @@ def mostrar_time():
 def iniciar_quiz(questoes):
     limpar_tela()
     pontuacao = 0
+    questao_numero = 0
     for questao, resposta in questoes:
         hello()
         linha()
         print('')
-        texto = "  PERGUNTA ==> " + questao + " : " +  resposta
-        print_limitado(texto, 88)
+        print('  ATENÇÃO: ')
+        print('    Cada resposta CERTA  você GANHA 1 ponto')
+        print('    Cada resposta ERRADA você PERDE 1 ponto')
+        print('    Cada questão pulada você nem ganha nem perde ponto')
         print('')
-        print('  RESPOSTA: (V/F)')
+        #texto = "  PERGUNTA ==> " + questao + " : " +  resposta
+        questao_numero += 1
+        texto = str(questao_numero) + "  PERGUNTA ==> " + questao
+
+        print_limitado(texto, 88)
+        print(str(questao_numero) + ' :')
+        print('  RESPOSTA: (V/F ou P para pular)')
 
         resposta_usuario = input("  =======>: ").upper()        
         print('')            
         if resposta_usuario == resposta:
                 print("  Resposta correta!")
                 pontuacao += 1
+        elif resposta_usuario == "P":
+                print("Você pulou esta questão.")
+                aguarde()
+        
         else:
                 print("  Resposta incorreta.")
+                pontuacao -= 1
 
         print('  RESUMO: ')
         linha()
@@ -137,14 +155,21 @@ def iniciar_quiz(questoes):
         aguarde()
         limpar_tela()
 
+    hello()
+    linha()
+    print('')
+    print("  RESUMO:")
+    linha()
+    print('  Você concluiu o simulado. Verifique abaixo um resumo do resultado obtido.')
+    print('')
+    print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
+    print('')
+    
+
 # Função para carregar um novo arquivo de questões
 def carregar_novo_arquivo():
     nome_arquivo = input("Digite o nome do novo arquivo de questões: ")
     return carregar_questoes(nome_arquivo)
-
-# Função para mostrar o total de questões na base de dados
-def mostrar_total_questoes(questoes):
-    print("Número de questões na base de dados:", len(questoes))
 
 # Função principal
 def main():
@@ -161,9 +186,9 @@ def main():
         print("  MENU DE OPÇÕES:")
         linha()
         print("  1. INICIAR QUIZ")
-        print("  2. REGISTRAR NICKNAME")
-        print("  3. MOSTRAR TOTAL DE QUESTÕES")
-        print("  4. SELECIONAR QUESTÕES")
+        print("  2. COMO FUNCIONA")
+        print("  3. ")
+        print("  4. ")
         print("  9. TIME DO PROJETO")
         print("  0. SAIR")
         linha();       
@@ -171,32 +196,33 @@ def main():
 
         if opcao == "1":
             limpar_tela()
-            questoes = selecionar_questoes("quiz.dat", 5)
+            questoes = selecionar_questoes("quiz.dat", 3)
             iniciar_quiz(questoes)
-            input("Pressione Enter para continuar...")
-        elif opcao == "2":
+            input("  Pressione Enter para continuar...")
+        elif opcao == "":
             limpar_tela()
             questoes = carregar_novo_arquivo()
-            input("Pressione Enter para continuar...")
-        elif opcao == "3":
+            input("  Pressione Enter para continuar...")
+        elif opcao == "":
             limpar_tela()
-            mostrar_total_questoes(questoes)
-            input("Pressione Enter para continuar...")
+            input("  Pressione Enter para continuar...")
         elif opcao == "4":
             limpar_tela()
             questoes = selecionar_questoes("quiz.dat", 2)
-            input("Pressione Enter para continuar...")
+            input("  Pressione Enter para continuar...")
         elif opcao == "9":
             limpar_tela()
             mostrar_time()
-            input("Pressione Enter para continuar...")
+            input("  Pressione Enter para continuar...")
 
         elif opcao == "0":
             limpar_tela()
-            print("Saindo do programa...")
+            print("  Saindo do programa...")
+            hello()
+            contato()
             break
         else:
-            print("Opção inválida. Tente novamente.")
+            print("  Opção inválida. Tente novamente.")
 
 if __name__ == "__main__":
     main()
