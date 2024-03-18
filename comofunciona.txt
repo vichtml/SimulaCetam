@@ -1,0 +1,79 @@
+-------------------------------------------------------------------
+  ____ _____ _____  _    __  __       _        _    ____    _ _ 
+ / ___| ____|_   _|/ \  |  \/  |     | |      / \  | __ )  / / |
+| |   |  _|   | | / _ \ | |\/| |     | |     / _ \ |  _ \  | | |
+| |___| |___  | |/ ___ \| |  | |_ _ _| |___ / ___ \| |_)   | | |
+ \____|_____| |_/_/   \_\_|  |_(_|_|_)_____/_/   \_\____/  |_|_|
+
+          CENTRO DE EDUCAÇÃO TECNOLÓGICA DO AMAZONAS
+              IBC - INSTITUTO BENJAMIN CONSTANT
+                LABORATÓRIO DE INFORMÁTICA 11
+                
+-------------------------------------------------------------------
+Projeto: Gerador de simulados de questões sobre tecnologia+
+Marcelo Fournier - prof. Orientador
+
+OBJETIVOS DO PROJETO:
+==================================================================================
+Este projeto possui 3 objetivos centrais:
+
+1. Mostrar aos alunos como é simples sair do zero em programação python com o uso 
+de assistentes de IA, como o chatGPT, e executar seus programas no ambiente linux;
+
+2. Dar aos alunos uma experiência prática real de desenvolvimento de um pequeno 
+projeto com a formação de um time de trabalho multifacetado. Sair do zero e ter um
+projeto para chamar de seu;
+
+3. Construir uma plataforma onde o aluno possa desenvolver seus conhecimentos nas
+disciplinas oferecidas no CETAM no formato simulados de provas, com questões V/F.
+
+Do ponto de vista técnico há diversas oportunidades de melhorias para este projeto
+como em questões como o uso de um gerenciador de banco de dados, uso de orientação a 
+objeto em python, dentre outras. No entanto, acreditamos que nosso objetivo foi 
+alcançado.
+
+COMO FUNCIONA:
+==================================================================================
+Basicamente temos um banco de questões sobre tecnologia. Essas questões estão 
+armazenadas num arquivo texto.txt simples onde cada questão é adicionada numa nova
+linha no forma a seguir:
+
+        "A capital de Manaus é o Amazonas", F 
+
+Observe que buscou-se o equilíbrio de questões V e F. Diante disso, em cada item 
+podemos construir 2 sentenças (uma verdadeira e uma falsa). Neste caso temos 2 linhas.
+
+        "A capital do Amazonas é Manaus", V 
+        "A capital de Manaus é o Amazonas", F 
+
+A partir daí cria-se uma banco com milhares de questões. O programa carrega estas
+questões, faz uma escolha aleatória delas e então começa o simulado para que o aluno 
+o responda. 
+
+PONTUAÇÃO:
+==================================================================================
+Cada resposta certa vale 1 ponto ganho.
+Cada resposta errada perde 1 ponto.
+É possível pular a questão. Neste caso, não se ganha nem perde ponto.
+
+Ao final o programa mostra um resumo do resultado obtido. A pontuação, as questões
+que o usuário errou e aquelas que ele pulou.
+
+GITHUB
+==================================================================================
+Este projeto poderá ser baixado a partir do github via git clone. Recomandamos O
+uso do linux Ubuntu 22.04 LTS ou superior. Link para o repositório no github:
+
+Observação: o projeto ainda está privado (não é público).
+https://github.com/marcelofournier/simulacetam 
+
+
+CRIE SUAS PRÓPRIAS QUESTÕES
+==================================================================================
+Quando você baixar o projeto do github para uma máquina local, ele já virá com 
+centenas de questões. Entretanto, aconselho aos alunos que criem suas próprias 
+questões a partir de livros didáticos e apostilas sobre temas em estudo no CETAM.
+Basta inserir as questões no arquivo quiz.dat. Trata-se de um arquivo texto comum 
+que pode ser aberto com o nano, gedit no linux ou o notepad no Windows.
+
+Marcelo Fournier - prof. Orientador

@@ -1,0 +1,39 @@
+
+_)_ __ ___ ___(_)
+| | '__/ __/ __| |
+| | |  \__ \__ \ |
+|_|_|  |___/___/_|
+
+Você está prestes a acessar o nosso servidor IRC chat.
+
+IMPORTANTE: O sistema tentará automaticamente se conectar ao nosso servidor de chat local.
+Em resumo, o procedimento é o seguinte:
+==================================================================================
+1. Conectar-se a um servidor;
+2. Entrar numa sala já existente ou criar uma nova sala/canal;
+3. Conversar em grupo ou de forma privada com um usuário;
+4. Sair da sala/canal;
+5. Desconectar-se do servidor
+6. Sair do programa irssi.
+
+Veja abaixo alguns comandos importantes:
+===================================================================================
+COMANDO                     |   DESCRIÇÃO
+===================================================================================
+/server list                ==> mostra uma lista de servidores ativos
+/help                       ==> mostra os comandos aceitos no prompt
+/connect ip                 ==> conecta no servidor via seu endereço IP
+/disconnect [server]        ==> disconect de um servidor
+/nick apelido               ==> escolhe um nickname/apelido para uso
+/list                       ==> lista todos os canais/salas disponíveis no servidor
+/join <nome_sala/canal>     ==> conecta a uma sala existe ou cria uma nova
+/msg <usuario> <mensagem>   ==> envia uma mensagem pri
+/whois usuario              ==> obtém informações sobre um usuário
+/part                       ==> sai da sala de bate-papo atual
+/ignore usuario             ==> ignora mensagens de um usuário
+/ignore -r usuario          ==> deixa de ignoar um usuário
+/away [motivo]              ==> define-se como ausente na sala
+/back                       ==> sai do modo ausente
+/clear                      ==> limpa o buffer de mensagens
+/quit                       ==? sai do programa
+====================================================================================

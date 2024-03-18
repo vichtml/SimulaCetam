@@ -39,6 +39,18 @@ def contato():
     limpar_tela()
     mostrar_time()
 
+def como_funciona():
+    limpar_tela()
+    hello()
+    abrir_arquivo("comofunciona.txt")
+    aguarde()
+
+def chama_chat():
+    limpar_tela()
+    hello()
+    abrir_arquivo("chatola.txt")
+    aguarde()
+    
 def hello():
     print('')
     os.system('figlet ....SIMULA CETAM')   
@@ -119,6 +131,9 @@ def iniciar_quiz(questoes):
     limpar_tela()
     pontuacao = 0
     questao_numero = 0
+    questoes_erradas = []
+    questoes_puladas = []
+    
     for questao, resposta in questoes:
         hello()
         linha()
@@ -130,7 +145,7 @@ def iniciar_quiz(questoes):
         print('')
         #texto = "  PERGUNTA ==> " + questao + " : " +  resposta
         questao_numero += 1
-        texto = str(questao_numero) + "  PERGUNTA ==> " + questao
+        texto = str(questao_numero) + '🤔' + "  PERGUNTA ==> " + questao
 
         print_limitado(texto, 88)
         print(str(questao_numero) + ' :')
@@ -142,14 +157,15 @@ def iniciar_quiz(questoes):
                 print("  Resposta correta!")
                 pontuacao += 1
         elif resposta_usuario == "P":
-                print("Você pulou esta questão.")
+                print("  Você pulou esta questão.")
+                questoes_puladas.append(questao)
                 aguarde()
-        
         else:
                 print("  Resposta incorreta.")
                 pontuacao -= 1
+                questoes_erradas.append(questao)
 
-        print('  RESUMO: ')
+        print('  RESUMO PARCIAL: ')
         linha()
         print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
         aguarde()
@@ -158,9 +174,31 @@ def iniciar_quiz(questoes):
     hello()
     linha()
     print('')
-    print("  RESUMO:")
+    print("  RESUMO TOTAL:")
     linha()
     print('  Você concluiu o simulado. Verifique abaixo um resumo do resultado obtido.')
+    print('')
+
+    if len(questoes_puladas) == 0:
+        print('  ✅' + ' Você não pulou nenhuma questão.')
+        print('')
+    else: 
+        print('  ⚠️' + ' Você pulou as seguintes questões:')
+        for texto in questoes_puladas:
+            print('  ' + texto)
+
+        print('')
+
+    if len(questoes_erradas) != 0: 
+        print('  ❌' + ' Você errou as seguintes questões:')
+        for string in questoes_erradas:
+            print('  ' + string)
+
+        print('')
+
+    else: 
+        print('  😁' + ' Parabéns! Você não errou nenhuma questão!')
+
     print('')
     print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
     print('')
@@ -185,9 +223,9 @@ def main():
         linha()
         print("  MENU DE OPÇÕES:")
         linha()
-        print("  1. INICIAR QUIZ")
-        print("  2. COMO FUNCIONA")
-        print("  3. ")
+        print("  1. COMO FUNCIONA")
+        print("  2. RESPONDER SIMULADO")
+        print("  3. CANAL IRC CHAT")
         print("  4. ")
         print("  9. TIME DO PROJETO")
         print("  0. SAIR")
@@ -195,16 +233,15 @@ def main():
         opcao = input("  SELECIONE A OPÇÃO DESEJADA ==> : ")
 
         if opcao == "1":
+            como_funciona()
+            input("  Pressione Enter para continuar...")
+        elif opcao == "2":
             limpar_tela()
             questoes = selecionar_questoes("quiz.dat", 3)
             iniciar_quiz(questoes)
             input("  Pressione Enter para continuar...")
-        elif opcao == "":
-            limpar_tela()
-            questoes = carregar_novo_arquivo()
-            input("  Pressione Enter para continuar...")
-        elif opcao == "":
-            limpar_tela()
+        elif opcao == "3":
+            chama_chat()
             input("  Pressione Enter para continuar...")
         elif opcao == "4":
             limpar_tela()
