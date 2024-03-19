@@ -50,6 +50,30 @@ def chama_chat():
     abrir_arquivo("chatola.txt")
     aguarde()
     
+def totalizar_pontos(nome_arquivo):
+    # Dicionário para armazenar os pontos de cada usuário
+    pontos_por_usuario = {}
+
+    # Abrir o arquivo texto
+    with open(nome_arquivo, 'r') as arquivo:
+        # Ler cada linha do arquivo
+        for linha in arquivo:
+            # Dividir a linha em nome e pontos
+            nome, pontos_str = linha.strip().split(';')
+            pontos = int(pontos_str)
+
+            # Adicionar os pontos ao total do usuário
+            if nome in pontos_por_usuario:
+                pontos_por_usuario[nome] += pontos
+            else:
+                pontos_por_usuario[nome] = pontos
+
+    # Ordenar o dicionário por valor (pontos) em ordem decrescente
+    pontos_por_usuario_ordenados = dict(sorted(pontos_por_usuario.items(), key=lambda item: item[1], reverse=True))
+
+    # Retornar o dicionário com os totais de pontos ordenados
+    return pontos_por_usuario_ordenados
+
 def hello():
     print('')
     os.system('figlet ....SIMULA CETAM')   
@@ -153,7 +177,22 @@ def mostrar_ranking(nome_arquivo):
         print('  ' + f"{i}. {nickname}: {pontuacao}")
 
     linha()
-    
+
+
+def mostrar_xps():
+    nome_arquivo = 'ranking.dat'  # Nome do arquivo texto
+    resultados = totalizar_pontos(nome_arquivo)
+    limpar_tela()
+    hello()
+    linha()
+    print('  XP POR USUÁRIO')
+    linha()
+    for nome, pontos in resultados.items():
+        print('  ' + f'{nome}: {pontos} pontos')
+
+    linha()
+
+
 
 # Função para iniciar o quiz
 def iniciar_quiz(questoes):
@@ -263,8 +302,9 @@ def main():
         print("  1. COMO FUNCIONA")
         print("  2. RESPONDER SIMULADO")
         print("  3. IRC CHAT")
-        print("  4. RANKING")
-        print("  5. TIME DO PROJETO")
+        print("  4. RANKING DE PONTOS")
+        print("  5. RANKING DE XP")
+        print("  6. TIME DO PROJETO")
         print("  0. SAIR")
         linha();       
         opcao = input("  SELECIONE A OPÇÃO DESEJADA ==> : ")
@@ -287,6 +327,10 @@ def main():
             mostrar_ranking("ranking.dat")
             input("  Pressione Enter para continuar...")
         elif opcao == "5":
+            limpar_tela()
+            mostrar_xps()
+            input("  Pressione Enter para continuar...")
+        elif opcao == "6":
             limpar_tela()
             mostrar_time()
             input("  Pressione Enter para continuar...")

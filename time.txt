@@ -8,27 +8,28 @@
           CENTRO DE EDUCAÇÃO TECNOLÓGICA DO AMAZONAS
               IBC - INSTITUTO BENJAMIN CONSTANT
                 LABORATÓRIO DE INFORMÁTICA 11
-                
+                PROJETO DE PESQUISA E EXTENSÃO
 -------------------------------------------------------------------
 Projeto: Gerador de simulados de questões sobre tecnologia
 Marcelo Fournier - prof. Orientador
 
 Time do projeto
-Moderadores:
+Desenvolvimento python/linux:
+====================================
+Alexsander Victor Silva Ferreira
+Luiz Eduardo Macedo de Souza Junior
+Luiz Miguel de Jesus D'Ávilla 	
+Efraim de Oliveira Barrosos
+Joao Victor Queiroz Barauna da Costa
+Thayller de Vasconcelos Picanco
+
+Moderadores/base de conhecimento:
 ===================================
 Gleiceanne Marques da Silva		
 Luana Mendonca Tavares
 Monic da Silva Rabelo
 Nicolle Beatriz de Souza Guimarães 
 Shaila de Almeida David		
-
-Desenvolvimento python/linux:
-====================================
-Alexsander Victor Silva Ferreira
-Luiz Eduardo Macedo de Souza Junior		
-Efraim de Oliveira Barrosos
-Joao Victor Queiroz Barauna da Costa
-Thayller de Vasconcelos Picanco
 
 Contato: fournier.marcelo@gmail.com |
 -------------------------------------------------------------------
