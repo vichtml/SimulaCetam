@@ -183,3 +183,103 @@ O Raspberry PI é um mini computador desenvolvido por uma universidade britânic
 No jargão do ecosistema linux, "repositório" é um termo que significa um tipo de servidor no qual existem softwares que podem ser instalados diretamente do terminal, por exemplo; V 
 Ao adquirir uma licença do Windows 11 temos o direito de uso e não o software em si. Quando usamos um software livre (GPL3) não pagamos nada, porém não temos garantias; V 
 A redundância de hardware é uma estratégia de configuração de sistemas de computação e equipamentos que envolve a duplicação de componentes críticos; V 
+Em geral, os fabricantes de periféricos desenvolvem drivers para que seus produtos possam ter desempenho otimizado no Windows 11; V 
+Em geral, o sistema operacional linux utiliza de uma espécie de reconhecimento genérico de hardware. Isso faz com que o hardware até funcione, mas não tenha seu desempenho máximo, especialmente em produtos mais sofisticados e caros; V 
+O Técnico em Montagem e Manutenção de Computadores (ou Técnico em Hardware) é o profissional apto a realizar instalações, configurações, atualizações e manutenção em geral no que se refere especificamente à Hardware; V 
+O termo Computador tem sua origem do latim Computare (contar, calcular) e é um equipamento composto por uma série de circuitos eletrônicos capaz de receber, armazenar, comparar, combinar, processar e exibir uma determinada informação com elevada velocidade; V 
+Dependendo da velocidade de transmissão os termos bit e byte são sinônimos; F 
+Um byte equivale a 16 bits de informação; F 
+Um byte equivale a 8 bits de informação; V 
+Quando instalamos um novo Hardware no computador é necessário que o Sistema Operacional gerencie o seu funcionamento com todos os seus recursos. E é responsabilidade de um software especial denominado Driver que tem a função de realizar a comunicação entre o Hardware e o SO; v 
+Quando instalamos um novo Hardware no computador é necessário que o Sistema Operacional gerencie o seu funcionamento com todos os seus recursos. O sistema operacional Windows consegue realizar este reconhecimento de forma automática sem necessitar de quaisquer outros softwares de terceiros; F 
+O termo peopleware refere-se aos usuários que, de alguma forma, estão relacionados ao sistema computacional; V 
+A ULA - Unidade Lógica e Aritmética de uma CPU é responsável por gerenciar o uso de RAM para que este possa fazer cálculos; F 
+A ULA - Unidade Lógica e Aritmética de uma CPU é responsável por realizar operações de comparação e cálculos matemáticos; V 
+O bit é a menor unidade de informação reconhecida pelo computador, e é representado pelos valores lógicos 0 ou 1; V 
+O byte é a menor unidade de informação reconhecida pelo computador, e é representado pelos valores lógicos 0 ou 1; F 
+Em relação à bits e bytes, podemos afirmar que 10 Mb é menor do que 10 MB; V 
+Em relação à bits e bytes, podemos afirmar que 10 MB é menor do que 10 Mb; F 
+Um único bit não é suficiente para representar uma informação; V 
+Um único bit é suficiente para representar uma informação; F 
+O Byte pode representar até 256 caracteres (letra, número, símbolos, ou funções entendidas pelo computador); V 
+O Byte pode representar até 128 caracteres (letra, número, símbolos, ou funções entendidas pelo computador); F 
+Um KiloByte tem 1000 bytes; F 
+Um KiloByte tem 1024 bytes; V 
+Um MegaByte tem 1000 KiloBytes; F 
+Um MegaByte tem 1024 KiloBytes; V 
+Um GigaByte tem 1000 Megabytes; F 
+Um GigaByte tem 1024 Megabytes; V 
+Um TeraByte tem 1000 GigaBytes; F 
+Um TeraBytes tem 1024 GigaBytes; V 
+Para representarmos o bit e o Byte com abreviação devemos atentar que o bit representa-se com a letra “b” em minúsculo e o Byte com a letra “B” em maiúsculo; v 
+Em 1981 a empresa IBM lançou um modelo de microcomputador, chamado PC – Personal Computer (Computador Pessoal) que revolucionou o mercado de microcomputadores, pois este novo padrão possibilitou o desenvolvimento de computadores montados com componentes de fabricantes diferentes; V 
+O padrão ATX é uma evolução do AT e foi criado em 1995 pela Intel. É utilizado atualmente para a grande maioria de Placas-Mãe do mercado; V 
+A função da fonte de alimentação de um computador é receber a tensão fornecida pela rede elétrica (127 ou 220 volts) e converter essa tensão em uma voltagem que atenda as necessidades de cada dispositivo do computador, ou seja, em 3,3V, 5V ou 12; V 
+Ao se comprar uma fonte de alimentação deve-se observar sua capacidade ou potência watts. É importante garantir que ela seja capaz de atender à necessidade do computador na qual será instalada; V 
+Toda fonte de alimentação já vem de fábrica pronta para atender às necessidades de potência de qualquer computador; F 
+O barramento de expansão é responsável por possibilitar a conexão de placas de expansão no computador, tais como: Placa de vídeo, Placa de Som, Placa de rede, etc; V 
+O barramento de expansão é responsável por possibilitar a comunicação interna no processador de um computador; F 
+PCI-Express (Peripherical Component Interconect) é um tipo de barramento de expansão; V 
+VLB (Vesa Local Bus – VESA), PCI (Peripherical Component Interconect) e USB – Universal Serial Bus são exemplos de barramentos de expansão; V 
+O chipset Ponte Sul: Chip responsável por controlar os dispositivos de entrada e saída, que normalmente são os dispositivos mais lentos do computador: Disco Rígido, barramento PCI, barramento USB, etc.; V 
+O chipset Ponte Norte: Chip responsável por controlar os dispositivos de entrada e saída, que normalmente são os dispositivos mais lentos do computador: Disco Rígido, barramento PCI, barramento USB, etc.; F 
+O chipset Ponte Norte (Chip conectado diretamente ao processador) é responsável pelo controle da memória RAM, barramento AGP ou PCI-Express. Responsável também pela comunicação com o Chipset Ponte Sul; V 
+Os slot AGP (Accelerated Graphics Port) ou PCI-Express são usados em geral para conexão de placa de vídeo, por exemplo; V 
+Os slot AGP (Accelerated Graphics Port) ou PCI-Express são usados em geral para conexão de dispositivos como teclado e mouse, por exemplo; V 
+O barramento USB – Universal Serial Bus atende a padrão aberto da indústria de computadores; v
+O barramento USB – Universal Serial Bus atende a padrão fechado da indústria de computadores; v
+Os slots PCI, em geral são usados para conexão de placas de expansão como placa de som, placa de rede, etc;  V 
+O pulso ou ciclo de clock no computador regula o tempo necessário para o processamento de cada instrução. É uma unidade medida em Hertz; V 
+Um computador que trabalha a 2.6GHz (GigaHertz) trabalha em 2.6 milhões de ciclos por segundo; F 
+Um computador que trabalha a 2.6GHz (GigaHertz) trabalha em 2.6 bilhões de ciclos por segundo; v 
+A Cache L1 (Level 1 = Nível 1): Memória presente dentro do processador, o que possibilita trabalhar na mesma velocidade; v 
+A Cache L1 (Level 1 = Nível 1): Memória presente dentro do processador, tem velocidade inferior a Cache 2 e 3; F 
+A VRAM (Video Random Access Memory), também conhecida como memória de vídeo, é a memória física dedicada especificamente à GPU (Graphics Processing Unit); v 
+A VRAM (Video Random Access Memory), também conhecida como memória de vídeo, é a memória física dedicada especificamente ao swap em disco rígido ou SSD; F 
+Memória Unificada: Em alguns sistemas, a memória do sistema principal e a memória da GPU são totalmente unificadas, o que significa que não há distinção entre a memória da GPU e a memória do sistema; V 
+A VRAM é volátil assim como a RAM; v
+A VRAM não é volátil, diferente da RAM; F 
+Quando um computador é reiniciado ou desligado, os dados da VRAM são perdidos; V 
+Quando um computador é reiniciado ou desligado, os dados da VRAM não são perdidos; F 
+No Windows 11 ou no linux, o conceito de swap é equivalente ao conceito de arquivo de paginação. Quando a RAM precisa de mais espaço o S.O. faz paginação alocando espaço na memória disponível no HD ou SSD; V 
+É possível utilizar um computador sem RAM, desde que ele tenha um pendrive inserido nele; F 
+SATA (Serial Advanced Technology Attachment) é um padrão de barramento de comunicação de dados muito usado em HD, SSD, etc; 
+O padrão SATA (Serial Advanced Technology Attachment) tem velocidades de transferência de dados inferior ao padrão USB (Universal Serial Bus); f 
+SATA: As conexões SATA são tipicamente feitas internamente, usando cabos SATA para conectar dispositivos de armazenamento à placa-mãe do computador; V 
+SATA: O padrão SATA não fornece energia aos dispositivos conectados. Os dispositivos SATA geralmente requerem uma fonte de alimentação separada, seja diretamente da fonte de alimentação do computador ou de uma fonte de alimentação externa; v 
+SATA: O padrão SATA fornece energia aos dispositivos conectados; F 
+USB: O USB fornece energia aos dispositivos conectados. Isso permite que muitos dispositivos USB sejam alimentados diretamente pela porta USB do computador, eliminando a necessidade de uma fonte de alimentação externa; v 
+USB: O USB não fornece energia aos dispositivos conectados; F 
+USB: O padrão USB é uma interface de comunicação utilizada para conectar uma variedade de dispositivos externos, como teclados, mouses, impressoras, unidades flash USB, discos rígidos externos, dispositivos de áudio e vídeo, entre outros; V 
+SATA: O padrão SATA é principalmente utilizado para conectar dispositivos de armazenamento de dados internos, como discos rígidos (HDDs) e unidades de estado sólido (SSDs), a computadores desktops e laptopS; v 
+USB: As velocidades de transferência do USB variam de acordo com a versão do padrão; V 
+USB: As velocidades de transferência do padrão USB são todas iguais, independente de sua geração; f 
+Memória Flash: É uma memória do tipo EEPROM (Electrically-Erasable Programmable Read-Only Memory), não volátil, ou seja, os seus dados não são apagados com a ausência de energia elétrica; v 
+Memória Flash: É uma memória do tipo EEPROM (Electrically-Erasable Programmable Read-Only Memory), ou seja, volátil. Seus dados são apagados com a ausência de energia elétrica; F 
+Memória Flash: Atualmente há uma grande variedade de dispositivos que utilizam este tipo de memória: Pen-Drive, Cartões de Memória, Celulares, Câmeras Digitais, etc; V 
+Memória Flash: Deixou de ser usada em dispositivos como Pen-Drive, Cartões de Memória, Celulares, Câmeras Digitais, etc; F 
+Quando se dá manutenção em placas de computadores, não  
+A ordem de boot de um computador não pode ser alterada com ele desligado; V 
+A ordem de boot de um computador pode ser alterada via setup da BIOS; V 
+No setup da BIOS de um computador é possível desativar um dispositivo como um SSD sem a necessidade de desconectá-lo fisicamente; V 
+No setup da BIOS, uma vez alterado pelo usuário, não há uma forma de se restaurar suas configurações de fábrica; F 
+No setup da BIOS, existe uma opção Load Setup Defaults que permite restaurar as configurações de fábrica;  V 
+O sistema de arquivos padrão utilizado pelo Windows 11 é o NTFS; V 
+O sistema de arquivos padrão utilizado pelo Windows 11 é o FAT32; F 
+O sistema de arquivos padrão utilizado pelo linux Ubuntu é o EXT4; V
+Dois passos importantes para a instalação de um sistema operacional num computador são: preparar uma mídia bootável e configurar a ordem do boot; V 
+Não é possível instalar o Windows 11 e o linux Ubuntu 22.04 LTS no mesmo computador, pois um é 64 bits enquanto o outro é 32; F 
+O ubuntu server quando instalado no formato padrão, vem sem o ambiente gráfico. Neste caso, toda a sua operação se dá por meio do terminal do sistema;  V 
+Num mesmo computador não é possível a instalação de 2 placas de vídeo para trabalharem em conjunto; F 
+Um processador que trabalha a 1.4GHz, em tese, pode realizar mais cálculos que um que opera em 1.4MHz; V 
+Um processador que trabalha a 1.4MHz, em tese, pode realizar mais cálculos que um que opera em 1.4GHz; V 
+As memórias RAM conhecidas como DDR4 são mais lentas que as DDR3; F
+As memórias RAM conhecidas como DDR2 são mais lentas que as DDR3; V 
+O linux Ubuntu pode ser instalado em um sistema operacional Windows sem afetar os arquivos existentes; V 
+A instalação do Windows 11 geralmente requer uma chave de produto válida fornecida pela Microsoft para ativar o sistema operacional e validar sua autenticidade; V 
+A instalação do Ubuntu oferece a opção de instalar o sistema operacional ao lado de outro sistema operacional existente, como o Windows, permitindo dual boot; v 
+O instalador nativo do Windows oferece a opção de instalar o sistema ao lado de outro, como sistema operacional existente, como o linux; F 
+O sistema operacional linux Ubuntu não requer uma chave de ativação para o produto; V 
+Em geral, pressionar o botão liga/desliga por 3 segundos gera uma interrupção de hardware e desliga o computador, se ligado; V 
+Uma interrupção de hardware é um defeito detectado de forma automática pelo sistema operacional; F 
+Uma impressora quando fica sem papel gera uma interrupção de hardware, seu driver e/ou o sistema operacional irão 

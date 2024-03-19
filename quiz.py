@@ -1,4 +1,4 @@
-import os, datetime, random, getch, socket
+import os, datetime, random, socket
 
 # Função para limpar a tela do terminal
 def limpar_tela():
@@ -32,8 +32,7 @@ def mostra_host_ip():
     print("  HOSTNAME:", hostname + '.' + "IP: ", endereco_ip)
 
 def aguarde():
-    print('  Pressione ENTER para prosseguir...')
-    getch.getch()
+    input('  Pressione ENTER para prosseguir...')
 
 def contato():
     limpar_tela()
