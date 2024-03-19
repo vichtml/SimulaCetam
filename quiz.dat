@@ -158,8 +158,7 @@ No Windows o comando "ver" faz uma verificação de segurança no sistema; F
 No Windows o comando color permite alterar as cores do texto e da tela de fundo do terminal; V 
 No Windows o comando shutdown permite fazer o desligamento do computador; v 
 No Windows o comando mkdir cria um diretório ou pasta; V  
-Apesar do linux ser um excelente e estável sistema operacional, infelizmente
-ele não possui nenhum software similar ao CPU-Z do Windows; F 
+Apesar do linux ser um excelente e estável sistema operacional, não possui nenhum software similar ao CPU-Z do Windows; F 
 A porta padrão do protocolo SSH é a 2288 e, por razões de segurança, não pode ser alterada de forma alguma; F 
 É possível acessar um computador remotamente mesmo que não tenhamos a senha da conta de um usuário local. Neste caso, precisamos dos pares de chaves criptogradas (chave pública e a chave privada) ; V 
 Um bom plano de manutenção preventiva de computadores deve ser capaz de abranger todo o planejamento anual a ser realizado no parque de máquinas instalado, de acordo com a capacidade de execução do time da TI; V 
@@ -180,7 +179,7 @@ Para se conectar a uma máquina remota usando o protocolo SSH na porta 8822 deve
 Com o protocolo SSH não é possível acessar uma máquina linux a partir de um computador com Windows 11; F 
 SLA (Service Level Agreement - Acordo de Nível de Serviço) é um tipo de formalização de um contrato entre duas partes na qual uma delas oferece um serviço (TI, por exemplo) e a outra remunera. Trata-se de um elemento fundamental para a busca da qualidade nos serviços de TI, em relação à gestão e o monitoramento contínuo do seu desempenho; v 
 O Arduino é uma plataforma de prototipagem desenvolvida na Itália. Com ela é possivel elaborar facilmente circuitos digitais e analógicos para os mais diversos fins, dentre eles projetos que permitam a integração entre sistemas computacionais; v 
-O Raspberry PI é um mini computador desenvolvido por uma universidade britânica com o objetivo de ser do tamanho de um carão de crédito. Utiliza a arquitetura ARM e pode facilmente ser utilizado com uma ISO de uma distro linux para fins diversos como servidores web, jogos, etc.; v
+O Raspberry PI é um mini computador desenvolvido por uma universidade britânica com o objetivo de ser do tamanho de um carão de crédito. Utiliza a arquitetura ARM e pode facilmente ser utilizado com uma ISO de uma distro linux para fins diversos como servidores web, jogos, etc; v
 No jargão do ecosistema linux, "repositório" é um termo que significa um tipo de servidor no qual existem softwares que podem ser instalados diretamente do terminal, por exemplo; V 
 Ao adquirir uma licença do Windows 11 temos o direito de uso e não o software em si. Quando usamos um software livre (GPL3) não pagamos nada, porém não temos garantias; V 
 A redundância de hardware é uma estratégia de configuração de sistemas de computação e equipamentos que envolve a duplicação de componentes críticos; V 

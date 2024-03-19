@@ -240,7 +240,7 @@ def iniciar_quiz(questoes):
     print('')
     print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
     print('')
-
+    linha()
     resposta = input("  Deseja registrar sua pontuação? (S/N): ")
     if resposta.lower() == 's':
         nickname = input("  Por favor, informe seu nickname: ")
@@ -254,10 +254,6 @@ def iniciar_quiz(questoes):
 # Função principal
 def main():
     nome_arquivo = "quiz.dat"  # Nome padrão do arquivo de questões
-    #questoes = carregar_questoes(nome_arquivo)
-    #questoes = selecionar_questoes("quiz.dat", 5)
-    #iniciar_quiz(questoes)
-
     while True:
         limpar_tela()
         linha()
@@ -279,7 +275,7 @@ def main():
             input("  Pressione Enter para continuar...")
         elif opcao == "2":
             limpar_tela()
-            questoes = selecionar_questoes("quiz.dat", 5)
+            questoes = selecionar_questoes("quiz.dat", 30)
             iniciar_quiz(questoes)
             input("  Pressione Enter para continuar...")
         elif opcao == "3":
