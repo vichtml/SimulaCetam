@@ -129,7 +129,7 @@ No linux o diretório /sbin possui programas usados pelo usuario comum para a ad
 No linux o diretório /var contém maior parte dos arquivos gravados com frequência pelos programas do sistema, e-mails, spool de impressão, etc; V 
 No linux o comando lx lista os arquivos de um diretório x; F 
 A sigla BIOS significa BASIC INPUT/OUTPUT SYSTEM, ou seja, sistema básico de entrada e saída; V 
-A sigla BIOS significa BASIC INPUT/OUTPUT SERVICE, ou seja, sistema básico de entrada e serviço; V 
+A sigla BIOS significa BASIC INPUT/OUTPUT SERVICE, ou seja, sistema básico de entrada e serviço; F 
 EEPROM significa Electrically Erasable Programmable Read-Only Memory – Memória de Apenas Leitura Apagável Eletricamente e Programável. Chip que pode ser reprogramado após ter seu conteúdo apagado eletricamente; v 
 EPROM significa Erasable Programmable Read-Only Memory – Memória de Apenas Leitura Apagável e Programável. Chip que pode ser reprogramado após ter seu conteúdo apagado por luz ultravioleta; v  
 FLASH é um tipo de memória que mantém suas informações mesmo após desligado o microcomputador. Exemplos: BIOS em FLASH EEPROM que possibilita a atualização do BIOS via software, cartões PMCIA utilizados como expansão de discos nos notebooks, cartões de memória e/ou pendrives; V 
@@ -158,3 +158,29 @@ No Windows o comando "ver" faz uma verificação de segurança no sistema; F
 No Windows o comando color permite alterar as cores do texto e da tela de fundo do terminal; V 
 No Windows o comando shutdown permite fazer o desligamento do computador; v 
 No Windows o comando mkdir cria um diretório ou pasta; V  
+Apesar do linux ser um excelente e estável sistema operacional, infelizmente
+ele não possui nenhum software similar ao CPU-Z do Windows; F 
+A porta padrão do protocolo SSH é a 2288 e, por razões de segurança, não pode ser alterada de forma alguma; F 
+É possível acessar um computador remotamente mesmo que não tenhamos a senha da conta de um usuário local. Neste caso, precisamos dos pares de chaves criptogradas (chave pública e a chave privada) ; V 
+Um bom plano de manutenção preventiva de computadores deve ser capaz de abranger todo o planejamento anual a ser realizado no parque de máquinas instalado, de acordo com a capacidade de execução do time da TI; V 
+O Plano Anual de Manutenção Preventiva pode indicar os custos envolvidos, a mão-de-obra e os insumos necessáriios para sua realização, dentre outros informações; V 
+Um Plano de Contenção de Incidentes de TI deve descrever que ações deverão ser tomadas quando um fato não desejado ocorrer, como por exemplo, uma invasão hacker, a queda de um servidor, ou até mesmo a falta de energia elétrica na empresa; V 
+O uso da inteligência artificial deve ser estimulado nas salas de aula. O chatGPT por exemplo pode nos auxiliar a desenvolver pequenos programas em python que nos ajude a identificar falhas em sistemas computacionais; V 
+O tipo de licença de software conhecido como OEM (Original Equipment Manufacturer – Fabricante Original de Equipamento) é destinada a ser distribuída junto com o hardware; v 
+Não é possível se instalar numa mesma máquina dois sistemas operacionais diferentes como um Windows 11 e o Linux Ubuntu 22.04, uma vez que eles possuem arquitetura diferentes, um 64 bits e o outro 32 bits; F 
+É possível fazer um computador funcionar sem nenhum pente de memória RAM, desde que haja pelo menos um pendrive instalado nela; F 
+No sistema operacional linux facilmente se testa um programa em python desenvolvido em sala de aula com a ajuda de IA. Para testar basta abrir um terminal e digitar os comandos: py nome_do_programa.py e dar enter; v 
+No linux o comando makedir cria um diretório; F 
+No linux o comando touch cria um arquivo vazio; v 
+No linux o comando trex lista uma árvore com a estrutura de diretórios; F 
+No linux o comando CONTROL + L limpa a tela do terminal; V 
+No linux o comando clear limpa a tela do terminal; V 
+Para se instalar um programa baixado na internet e que tenha a extensão *.deb devemos utilizar o seguinte comando: sudo apt install nome_do_programa.deb; f 
+Para se conectar a uma máquina remota usando o protocolo SSH na porta 8822 devemos utilizar o seguinte comando: ssh -p 8822 usuario@ip_da_maquina; V 
+Com o protocolo SSH não é possível acessar uma máquina linux a partir de um computador com Windows 11; F 
+SLA (Service Level Agreement - Acordo de Nível de Serviço) é um tipo de formalização de um contrato entre duas partes na qual uma delas oferece um serviço (TI, por exemplo) e a outra remunera. Trata-se de um elemento fundamental para a busca da qualidade nos serviços de TI, em relação à gestão e o monitoramento contínuo do seu desempenho; v 
+O Arduino é uma plataforma de prototipagem desenvolvida na Itália. Com ela é possivel elaborar facilmente circuitos digitais e analógicos para os mais diversos fins, dentre eles projetos que permitam a integração entre sistemas computacionais; v 
+O Raspberry PI é um mini computador desenvolvido por uma universidade britânica com o objetivo de ser do tamanho de um carão de crédito. Utiliza a arquitetura ARM e pode facilmente ser utilizado com uma ISO de uma distro linux para fins diversos como servidores web, jogos, etc.; v
+No jargão do ecosistema linux, "repositório" é um termo que significa um tipo de servidor no qual existem softwares que podem ser instalados diretamente do terminal, por exemplo; V 
+Ao adquirir uma licença do Windows 11 temos o direito de uso e não o software em si. Quando usamos um software livre (GPL3) não pagamos nada, porém não temos garantias; V 
+A redundância de hardware é uma estratégia de configuração de sistemas de computação e equipamentos que envolve a duplicação de componentes críticos; V 

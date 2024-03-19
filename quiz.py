@@ -32,7 +32,7 @@ def mostra_host_ip():
     print("  HOSTNAME:", hostname + '.' + "IP: ", endereco_ip)
 
 def aguarde():
-    print('  Pressione qualquer tecla para prosseguir...')
+    print('  Pressione ENTER para prosseguir...')
     getch.getch()
 
 def contato():
@@ -126,6 +126,36 @@ def abrir_arquivo(nome_arquivo):
 def mostrar_time():
     abrir_arquivo("time.txt")
 
+def registrar_pontuacao(nickname, pontuacao, nome_arquivo):
+    with open(nome_arquivo, 'a') as arquivo:
+        arquivo.write(f"{nickname};{pontuacao}\n")
+
+def mostrar_ranking(nome_arquivo):
+    # Abrir o arquivo e ler as pontuações
+    with open(nome_arquivo, 'r') as arquivo:
+        linhas = arquivo.readlines()
+
+    # Criar uma lista de tuplas (nickname, pontuação) a partir das linhas lidas
+    resultados = []
+    for linhaX in linhas:
+        nickname, pontuacao = linhaX.strip().split(';')
+        resultados.append((nickname, int(pontuacao)))
+
+    # Ordenar os resultados com base na pontuação (em ordem decrescente)
+    resultados_ordenados = sorted(resultados, key=lambda x: x[1], reverse=True)
+
+    # Mostrar os melhores resultados na tela
+    limpar_tela()
+    hello()
+    linha()
+    print("  MELHORES RESULTADOS:")
+    linha()
+    for i, (nickname, pontuacao) in enumerate(resultados_ordenados, start=1):
+        print('  ' + f"{i}. {nickname}: {pontuacao}")
+
+    linha()
+    
+
 # Função para iniciar o quiz
 def iniciar_quiz(questoes):
     limpar_tela()
@@ -145,11 +175,13 @@ def iniciar_quiz(questoes):
         print('')
         #texto = "  PERGUNTA ==> " + questao + " : " +  resposta
         questao_numero += 1
-        texto = str(questao_numero) + '🤔' + "  PERGUNTA ==> " + questao
+        texto = "  PERGUNTA " + str(questao_numero) +  " ==> " + questao
 
         print_limitado(texto, 88)
-        print(str(questao_numero) + ' :')
-        print('  RESPOSTA: (V/F ou P para pular)')
+        print('')
+        print('  RESPOSTA: ')
+        print('  [V] verdadeiro | [F] Falso | [P] Pular | [S] Sair | ')
+        #print('  RESPOSTA: ')
 
         resposta_usuario = input("  =======>: ").upper()        
         print('')            
@@ -160,6 +192,12 @@ def iniciar_quiz(questoes):
                 print("  Você pulou esta questão.")
                 questoes_puladas.append(questao)
                 aguarde()
+        elif resposta_usuario == "S":
+                print("  Você selecionou S para sair.")
+                aguarde()
+                limpar_tela()
+                break
+
         else:
                 print("  Resposta incorreta.")
                 pontuacao -= 1
@@ -180,34 +218,38 @@ def iniciar_quiz(questoes):
     print('')
 
     if len(questoes_puladas) == 0:
-        print('  ✅' + ' Você não pulou nenhuma questão.')
+        print('  Você não pulou nenhuma questão.')
         print('')
     else: 
-        print('  ⚠️' + ' Você pulou as seguintes questões:')
+        print('  Você pulou as seguintes questões:')
         for texto in questoes_puladas:
             print('  ' + texto)
 
         print('')
 
     if len(questoes_erradas) != 0: 
-        print('  ❌' + ' Você errou as seguintes questões:')
+        print('  Você errou as seguintes questões:')
         for string in questoes_erradas:
             print('  ' + string)
 
         print('')
 
     else: 
-        print('  😁' + ' Parabéns! Você não errou nenhuma questão!')
+        print('  Você não errou nenhuma questão!')
 
     print('')
     print("  Pontuação: {}/{}".format(pontuacao, len(questoes)))
     print('')
-    
 
-# Função para carregar um novo arquivo de questões
-def carregar_novo_arquivo():
-    nome_arquivo = input("Digite o nome do novo arquivo de questões: ")
-    return carregar_questoes(nome_arquivo)
+    resposta = input("  Deseja registrar sua pontuação? (S/N): ")
+    if resposta.lower() == 's':
+        nickname = input("  Por favor, informe seu nickname: ")
+        #pontuacao = int(input("  Agora, informe sua pontuação: "))
+        registrar_pontuacao(nickname, pontuacao, "ranking.dat")
+        print("  Pontuação registrada com sucesso!")
+    else:
+        print("  Pontuação não registrada.")
+    
 
 # Função principal
 def main():
@@ -225,9 +267,9 @@ def main():
         linha()
         print("  1. COMO FUNCIONA")
         print("  2. RESPONDER SIMULADO")
-        print("  3. CANAL IRC CHAT")
-        print("  4. ")
-        print("  9. TIME DO PROJETO")
+        print("  3. IRC CHAT")
+        print("  4. RANKING")
+        print("  5. TIME DO PROJETO")
         print("  0. SAIR")
         linha();       
         opcao = input("  SELECIONE A OPÇÃO DESEJADA ==> : ")
@@ -237,17 +279,19 @@ def main():
             input("  Pressione Enter para continuar...")
         elif opcao == "2":
             limpar_tela()
-            questoes = selecionar_questoes("quiz.dat", 3)
+            questoes = selecionar_questoes("quiz.dat", 5)
             iniciar_quiz(questoes)
             input("  Pressione Enter para continuar...")
         elif opcao == "3":
             chama_chat()
             input("  Pressione Enter para continuar...")
+            os.system('irssi')
+            aguarde()
         elif opcao == "4":
             limpar_tela()
-            questoes = selecionar_questoes("quiz.dat", 2)
+            mostrar_ranking("ranking.dat")
             input("  Pressione Enter para continuar...")
-        elif opcao == "9":
+        elif opcao == "5":
             limpar_tela()
             mostrar_time()
             input("  Pressione Enter para continuar...")
